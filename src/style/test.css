@@ -1,0 +1,100 @@
+
+* {
+    -webkit-transition: all 1s;
+}
+
+html {
+    /*background: rgb(63, 82, 99);*/
+    background: #dddddd;
+}
+
+body {
+    -webkit-perspective: 1000px;
+}
+
+pre, a {
+    color: white;
+}
+
+div#path-android {
+    left: 0;
+}
+
+div#path-android {
+    width: 25%;
+    height: 33.3%;
+}
+
+div#path-java {
+    left: 25%;
+    top: 0;
+}
+
+div#path-es6 {
+    left: 0;
+}
+
+div#path-es6 {
+    left: 25%;
+    width: 25%;
+}
+
+div#path-node {
+    left: 0;
+}
+
+div#path-python {
+    left: 0;
+}
+
+div#path-python {
+    width: 25%;
+}
+
+div#path-kotlin {
+    top: 66.6%;
+}
+
+div.lang {
+    transform: translate(-200%, 0);
+}
+
+div#path-infra {
+    left: 0;
+}
+
+div#path-aws {
+    left: 0;
+}
+
+div#path-docker {
+    left: 0;
+}
+
+div.position-infra {
+    transform: translate(-100%, 0);
+}
+
+div#path-logstash {
+    left: 0;
+}
+
+div#path-rapidminer {
+    left: 0;
+}
+
+div#path-rpa {
+    left: 0;
+}
+
+div#path-reactivex {
+    left: 0;
+}
+
+div.position-sw {
+    transform: translate(-100%, 0);
+}
+
+div.career {
+    transform: translate(-100%, 0);
+}

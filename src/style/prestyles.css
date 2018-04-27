@@ -1,0 +1,208 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: rgb(48, 48, 48);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(48, 48, 48);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #F5F5F5;
+    /*border: 2px solid rgb(48, 48, 48);*/
+}
+
+pre {
+    overflow: auto;
+    max-height: 90%;
+    width: 100%;
+    border-radius: 1px;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 2%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    height: 2%;
+    left: 0;
+    right: 0;
+    padding: 0 1%;
+    background: #000;
+}
+
+a:after {
+    content: '';
+    padding-right: 5px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: inherit;
+}
+
+a:last-of-type:after {
+    border: none;
+}
+
+div.card {
+    display: block;
+    position: absolute;
+    outline: 0;
+    text-align: center;
+}
+
+div.card > img:hover, div.card > svg:hover, div.card > a > svg:hover {
+    transform: scale(1.2);
+}
+
+img {
+    position: absolute;
+    margin: auto;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    height: auto;
+}
+
+svg {
+    position: relative;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+}
+
+div#path-android {
+    top: 0;
+    left: -100%;
+    width: 45%;
+    height: 94.5%;
+    background: rgb(255, 218, 68);
+}
+
+div#path-java {
+    top: -100%;
+    left: 25%;
+    width: 25%;
+    height: 33.3%;
+    background: #664228
+}
+
+div#path-es6 {
+    top: 33.3%;
+    left: -100%;
+    width: 50%;
+    height: 33.3%;
+    background: #fde404
+}
+
+div#path-node {
+    top: 33.3%;
+    left: -100%;
+    width: 25%;
+    height: 33.3%;
+    background: #333333;
+}
+
+div#path-python {
+    top: 66.6%;
+    left: -100%;
+    width: 50%;
+    height: 33.3%;
+    background: #3c70a5
+}
+
+div#path-kotlin {
+    top: -100%;
+    left: 25%;
+    width: 25%;
+    height: 33.3%;
+    background: #5b24e2
+}
+
+div#path-infra {
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 33.3%;
+    background: #333333;
+}
+
+div#path-aws {
+    top: 33.3%;
+    left: -50%;
+    width: 50%;
+    height: 33.3%;
+    background: #ffcb05;
+}
+
+div#path-docker {
+    top: 66.6%;
+    left: -50%;
+    width: 50%;
+    height: 33.3%;
+    background: #73abff;
+}
+
+div#path-logstash {
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 25%;
+    background: #cc9962;
+}
+div#path-rapidminer {
+    top: 25%;
+    left: -50%;
+    width: 50%;
+    height: 25%;
+    background: #ffcc00;
+}
+div#path-rpa {
+    top: 50%;
+    left: -50%;
+    width: 50%;
+    height: 25%;
+    background: #0088ff;
+}
+
+div#path-reactivex {
+    top: 75%;
+    left: -50%;
+    width: 50%;
+    height: 25%;
+    background: #151d2a;
+}
+
+div#career-github {
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 50%;
+    background: #333333;
+}
+div#career-medium {
+    top: 50%;
+    left: 100%;
+    width: 50%;
+    height: 50%;
+    background: #333333;
+}
+
+div.card > a {
+    color: #333333;
+}
