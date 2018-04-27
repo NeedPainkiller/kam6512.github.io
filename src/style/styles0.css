@@ -106,8 +106,8 @@ div#path-java { top: 0; }
 div#path-es6 { left: 0; }
 
 div#path-es6 {
-    left: 25%;
     width: 25%;
+    left: 25%;
 }
 
 div#path-node { left: 0; }
