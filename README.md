@@ -1,7 +1,7 @@
 kam6512.github.io
 =========
 
-[View Site](kam6512.github.io)
+[View Site](https://kam6512.github.io/)
 
 Clone
 --------
