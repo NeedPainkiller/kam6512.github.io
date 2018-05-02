@@ -96,7 +96,7 @@ async function startAnimation() {
 
 async function writeTo(el, message, mirrorToStyle) {
 
-    const speed = (window.location.hostname === 'localhost') ? 10: 16
+    const speed = (window.location.hostname === 'localhost') ? 20 : 20
     const endOfSentence = /[\.\?\!]\s$/
     const comma = /\D[\,]\s$/
     const endOfBlock = /[^\/]\n\n$/
