@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     overflow: hidden;
 }
+body { -webkit-perspective: 1000px; }
 
 ::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
