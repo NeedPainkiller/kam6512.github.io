@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "webpack .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open",
-    "watch": "webpack --progress --watch"
+    "dev": "webpack-dev-server --open"
   },
   "author": "kam6512 <kam6512@gmail.com> (http://kam6512.github.io/)",
   "license": "MIT",
