@@ -1,45 +1,27 @@
 import footerHTML from 'raw-loader!./footer.html'
 import preStyles from 'raw-loader!./src/style/prestyles.css'
-import test from 'raw-loader!./src/style/test.css'
-
-let styleText = [0, 1, 2, 3].map((i) => {
-    return require('raw-loader!./src/style/styles' + i + '.css')
-})
+import styleText from 'raw-loader!./src/style/styles.css'
 
 import 'classlist-polyfill'
 import Promise from 'bluebird'
 
 import writeChar from './src/lib/writeChar'
-import getPrefix from './src/lib/getPrefix'
-
 let style
 let styleEl
-let workEl
-let pgpEl
 
 let paused = false
 
 document.addEventListener('DOMContentLoaded', function () {
-    getBrowserPrefix()
     initializeElements()
     startAnimation()
 })
-
-function getBrowserPrefix() {
-    styleText = styleText.map((text) => {
-        return text.replace(/-webkit-/g, getPrefix())
-    })
-}
 
 function initializeElements() {
     appendFooter(document.getElementById('footer'))
     applyPreStyle(document.createElement('style'))
 
-    // El refs
     style = document.getElementById('style-tag')
     styleEl = document.getElementById('style-text')
-    workEl = document.getElementById('work-text')
-    pgpEl = document.getElementById('pgp-text')
 
     createStyleEvent(styleEl)
     createPauseEvent(document.getElementById('pause-resume'))
@@ -55,7 +37,6 @@ function applyPreStyle(preStyleEl) {
 }
 
 function createStyleEvent(styleEl) {
-    // Mirror user edits back to the style element.
     styleEl.addEventListener('input', function () {
         style.textContent = styleEl.textContent
     })
@@ -65,34 +46,18 @@ function createPauseEvent(pauseEl) {
     pauseEl.addEventListener('click', function (e) {
         e.preventDefault()
         if (paused) {
-            pauseEl.textContent = 'Pause'
+            pauseEl.textContent = 'Pause ||'
             paused = false
         } else {
-            pauseEl.textContent = 'Resume'
+            pauseEl.textContent = 'Resume ->'
             paused = true
         }
     })
 }
 
 async function startAnimation() {
-    // await writeTo(styleEl, test, true)
-    await writeTo(styleEl, styleText[0], true)
-    /*
-    await writeTo(styleEl, styleText[0], true)
-    // await writeTo(workEl, workText, false)
-    await writeTo(styleEl, styleText[1], true)
-    // createWorkBox()
-    await Promise.delay(1000)
-    await writeTo(styleEl, styleText[2], true)
-    // await writeTo(pgpEl, pgpText, speed, false)
-    await writeTo(styleEl, styleText[3], true)
-  */
+    await writeTo(styleEl, styleText, true)
 }
-
-/**
- * Helpers
- */
-
 
 async function writeTo(el, message, mirrorToStyle) {
 

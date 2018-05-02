@@ -69,7 +69,8 @@ pre:not(:empty) {
 
 .comment {
     color: #ffffff;
-    font-style: italic;
+    font-style: normal;
+    font-weight: bold;
 }
 .selector { color: #E69F0F; }
 .selector .key { color: #64D5EA; }
